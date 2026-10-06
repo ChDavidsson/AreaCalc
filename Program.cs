@@ -6,14 +6,14 @@ class Program
     {
         // Be användaren att mata in de nödvändiga måtten och sedan beräkna och visa arean.
         Console.WriteLine("Ange sidlängd för kvadraten:");
-        double squareSide = double.Parse(Console.ReadLine());
+        double squareSide = double.Parse(Console.ReadLine()!);
 
         Console.WriteLine("Ange längd och bredd för rektangeln:");
-        double rectangleLength = double.Parse(Console.ReadLine());
-        double rectangleWidth = double.Parse(Console.ReadLine());
+        double rectangleLength = double.Parse(Console.ReadLine()!);
+        double rectangleWidth = double.Parse(Console.ReadLine()!);
 
         Console.WriteLine("Ange radie för cirkeln:");
-        double circleRadius = double.Parse(Console.ReadLine());
+        double circleRadius = double.Parse(Console.ReadLine()!);
 
         Square square = new Square { SideLength = squareSide };
         Rectangle rectangle = new Rectangle { SideLength = rectangleLength, Width = rectangleWidth };
